@@ -5,17 +5,15 @@
   <body>
     <canvas id="game" style="width=1000px;height=1000px;"></canvas>
     <label for="running">Run game</label>
-    <input id="running" type="checkbox" checked="checked" />
+    <input id="running" type="checkbox" />
     <input id="clear" type="button" value="Clear" />
     <script src="board.js"></script>
     <script src="game_of_life.js"></script>
     <script type="text/javascript">
       var canvas = document.getElementById('game')
       var game  = new GameOfLife(50, 50)
-      console.log(game.getAliveCells())
       var board = new GameOfLifeGrid(game, canvas, 17)
       board.render()
-      board.run()
       var set_running = document.getElementById('running')
       set_running.addEventListener('click', function() {
         board.running = set_running.checked
