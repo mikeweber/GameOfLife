@@ -1,0 +1,6 @@
+A JavaScript implementation of Conways' Game of Life with a Canvas UI. 
+
+Can be played by running the index.html, clicking on the cells you want to activate, then check the "Run game" checkbox.
+
+http://htmlpreview.github.io/?https://rawgithub.com/mikeweber/GameOfLife/master/index.html
+
